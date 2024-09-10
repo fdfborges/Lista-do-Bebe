@@ -1,0 +1,75 @@
+@import './PalletColors.scss';
+
+@mixin Button-Style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 2.8rem;
+    font-size: 1.3rem;
+    color: $secondary-color;
+    font-weight: 600;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    &:hover{
+        transition: 0.3s;
+        background-color: $primary-color_HOVER;
+    }
+    &:active{
+        transition: 0.3s;
+        background-color: $primary-color_ACTIVE;
+    }
+}
+
+@import './PalletColors.scss';
+
+@mixin Button-StyleWHITE{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 2.8rem;
+    font-size: 1.3rem;
+    color: $secondary-color;
+    font-weight: 600;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    &:hover{
+        transition: 0.3s;
+        background-color: $primary-color_HOVER;
+    }
+    &:active{
+        transition: 0.3s;
+        background-color: $primary-color_ACTIVE;
+    }
+}
+
+@mixin Button-IsReserved{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 2.8rem;
+    font-size: 1.3rem;
+    color: $secondary-color;
+    font-weight: 600;
+    background-color: $tertiary-color;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    &:hover{
+        transition: 0.3s;
+        background-color: $tertiary-color_HOVER;
+    }
+    &:active{
+        transition: 0.3s;
+        background-color: $tertiary-color_ACTIVE;
+    }
+}

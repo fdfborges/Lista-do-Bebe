@@ -1,0 +1,71 @@
+@import '../Variables/PalletColors.scss';
+@import '../Variables/Elements.scss';
+
+
+.ContainerBody{
+    
+    justify-content: center;
+    align-items: center;
+    .ArrowDown{
+        display: flex;
+        left: 50%;
+        position: absolute;
+        bottom: 0;
+        img{
+            height: 3rem;
+        };
+    }
+    
+    .Container-Principal{
+        display: flex;
+        justify-content: center;    
+        .Container-Left{
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            flex: 1;
+            height: 100vh;
+            img{
+                width: 25rem;
+                height: 38rem;
+            }
+        }
+        
+        .Container-Right{
+            display: flex;
+            flex-direction: column;
+            
+            padding-left: 9rem;
+            gap: 2rem;
+            justify-content: center;
+            
+            align-items: start;
+            text-align: start;
+            flex: 1;
+            height: 100vh;
+            overflow: hidden;
+            h1{
+                font-size: 4rem;
+                color: $primary-color;    
+            }
+            p{
+                font-size: 3rem;
+                font-weight: 500;
+            }
+            button{
+                @include Button-Style;
+            }
+        }
+        .ContainerGiftImage{
+            position: absolute;
+            display: flex;
+            bottom: 0;
+            left: 2rem;
+            z-index: -1;
+            img{
+                width: 35rem;
+                height: 13rem;
+            }
+        }
+    }
+}
